@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "The name of the company to filter by, case-insensitive and may be a partial match."
+      },
+      "minEmployees": {
+        "type": "integer",
+        "description": "The minimum number of employees a company must have.",
+        "minimum": 0
+      },
+      "maxEmployees": {
+        "type": "integer",
+        "description": "The maximum number of employees a company can have.",
+        "minimum": 0
+      }
+    },
+    "additionalProperties": false
+  }
+  
